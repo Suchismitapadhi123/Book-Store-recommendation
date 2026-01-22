@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Book Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <div class="header-card">
+    <h1>📚 Online Book Store</h1>
+    <p>Discover stories that stop time. Scroll. Read. Feel.</p>
+    <div style="display: flex; gap: 10px; margin-top: 20px; justify-content: center;">
+      <button onclick="goToRecommendations()" class="logout-btn" style="background: linear-gradient(135deg, #4ade80, #22c55e); width: auto; padding: 10px 20px;">
+        🤖 Get Recommendations
+      </button>
+      <button onclick="logout()" class="logout-btn" style="width: auto; padding: 10px 20px;">Logout</button>
+    </div>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper" id="carousel-books">
+        <!-- Book slides will be injected here -->
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <div class="books-section">
+    <h2>📖 Our Collection</h2>
+    <div id="books-container" class="books-container">
+      <!-- Books will be displayed here -->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
